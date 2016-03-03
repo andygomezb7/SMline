@@ -1,0 +1,67 @@
+#SMLINE 1.1.2
+RewriteEngine On
+
+#RewriteCond %{HTTP_HOST} !^superstremo\.com$ [NC]
+#RewriteRule ^(.*)$ http://superstremo.com/$1 [R=301,L]
+
+Options +FollowSymLinks
+# Evitar escaneos y cualquier intento de manipulación malintencionada
+# de la URL. Con esta regla es imposible lanzar ataques de inyección (SQL, XSS, etc)
+RewriteCond %{HTTP_USER_AGENT} ^$ [OR]
+RewriteCond %{HTTP_USER_AGENT} ^(-|\.|') [OR]
+RewriteCond %{HTTP_USER_AGENT} ^(.*)(<|>|%3C|%3E)(.*) [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^(java|curl|wget)(.*) [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^(.*)(libwww-perl|libwwwperl|snoopy|curl|wget|winhttp|python|nikto|scan|clshttp|archiver|loader|email|harvest|fetch|extract|grab|miner|suck|reaper|leach)(.*) [NC,OR]
+
+RewriteCond %{REQUEST_URI} ^(/,|/;|/<|/>|/'|/`|/%2C|/%3C|/%3E|/%27|/////) [NC,OR]
+RewriteCond %{HTTP_REFERER} ^(.*)(%00|%08|%09|%0A|%0B|%0C|%0D|%0E|%0F|%2C|<|>|'|%3C|%3E|%26%23|%27|%60)(.*) [NC,OR]
+RewriteCond %{QUERY_STRING} ^(.*)(%00|%08|%09|%0A|%0B|%0C|%0D|%0E|%0F|%2C|%3C|%3E|%27|%26%23|%60)(.*) [NC,OR]
+RewriteCond %{QUERY_STRING} ^(.*)('|-|<|>|,|/|\\|\.a|\.c|\.t|\.d|\.p|\.i|\.e|\.j)(.*) [NC,OR]
+
+## Evitar que se liste el contenido de los directorios
+Options All -Indexes
+## Lo mismo que lo anterior
+IndexIgnore *
+# Protegerse contra los ataques DOS limitando el tamaño de subida de archivos
+LimitRequestBody 10240000
+#SANTA FE SCRIPT
+RewriteRule ^$ SM_start.php?act=posts [QSA,L]
+RewriteRule ^([A-Za-z0-9_-]+)[/]?$ SM_start.php?act=$1 [QSA,L]
+RewriteRule ^([A-Za-z0-9_-]+)/status/([0-9]+)$ SM_start.php?act=$1&status_id=$2 [QSA,L]
+RewriteRule ^ajax/([A-Za-z0-9_-]+)/([A-Za-z0-9_-]+)[/]?$ ajax_start.php?act=$1&action=$2 [QSA,L]
+#POSTS
+RewriteRule ^posts/([A-Za-z0-9_-]+)$ SM_start.php?act=posts&cat_seo=$1&list=cat [QSA,L]
+RewriteRule ^posts/([A-Za-z0-9_-]+)/([0-9]+)/(.*).html$ SM_start.php?act=posts&cat_seo=$1&post_id=$2&post_title=$3 [QSA,L]
+#IMAGENES
+RewriteRule ^imagenes/([0-9]+)/(.*).html$ SM_start.php?act=imagenes&do=mis&img_id=$1&img_title=$2 [QSA,L]
+#COMUNIDADES
+RewriteRule ^comunidades/([A-Za-z0-9_-]+)/$ SM_start.php?act=comunidades&comu_seo=$1&c_action=view-comu [QSA,L]
+RewriteRule ^comunidades/mis-comunidades/([A-Za-z0-9_-]+)$ SM_start.php?act=comunidades&c_action=mis-comunidades&order=$1 [QSA,L]
+RewriteRule ^comunidades/([A-Za-z0-9_-]+)/view-topics/$ SM_start.php?act=comunidades&comu_seo=$1&c_action=view-comu&view_topics=1 [QSA,L]
+RewriteRule ^comunidades/([A-Za-z0-9_-]+)/miembros/$ SM_start.php?act=comunidades&comu_seo=$1&c_action=admin-members [QSA,L]
+RewriteRule ^comunidades/([A-Za-z0-9_-]+)/temas-borrados/$ SM_start.php?act=comunidades&comu_seo=$1&c_action=topics-del [QSA,L]
+RewriteRule ^comunidades/([A-Za-z0-9_-]+)/editar/$ SM_start.php?act=comunidades&comu_seo=$1&c_action=edit-comu [QSA,L]
+RewriteRule ^comunidades/([A-Za-z0-9_-]+)/agregar[/]?$ SM_start.php?act=comunidades&comu_seo=$1&c_action=add-topic [QSA,L]
+RewriteRule ^comunidades/([A-Za-z0-9_-]+)/editar-tema$ SM_start.php?act=comunidades&comu_seo=$1&&c_action=edit-topic [QSA,L]
+RewriteRule ^comunidades/administrar/([A-Za-z0-9_-]+)/$ SM_start.php?act=comunidades&admin=$1&c_action=admin-comu [QSA,L]
+RewriteRule ^comunidades/home/([A-Za-z0-9_-]+)$ SM_start.php?act=comunidades&cat=$1 [QSA,L]
+RewriteRule ^comunidades/([A-Za-z0-9_-]+)/([0-9]+)/(.*).html[/]?$ SM_start.php?act=comunidades&comu_seo=$1&topic_id=$2&topic_title=$3&c_action=view-topic [QSA,L]
+#MENSAJES
+RewriteRule ^mensajes/a/([A-Za-z0-9_-]+)$ SM_start.php?act=mensajes&mp_to=$1&m_action=write [QSA,L]
+RewriteRule ^mensajes/leer/([0-9]+)$ SM_start.php?act=mensajes&mp_id=$1&m_action=read [QSA,L]
+
+RewriteRule ^([A-Za-z0-9_-]+)/([A-Za-z0-9_-]+)[/]?$ SM_start.php?act=$1&do=$2 [QSA,L]
+
+RewriteRule ^sitemap.xml$ sitemap.php [L,NC,QSA]
+
+#PERMITIR INCLUDES
+<FilesMatch "\.combined\.(css|js)$">
+	Options +Includes
+	SetOutputFilter INCLUDES
+</FilesMatch>
+
+#NO PERMITIR LA DESCARGA DE ARCHIVOS .TPL
+<FilesMatch "\.(htaccess|ini|log|cfg|tpl)$">
+Order Allow,Deny
+Deny from all
+</FilesMatch>

@@ -1,0 +1,35 @@
+************INSTALACION************
+
+---------------------------------------------------------------------------------------------
+-------->SI VAS A CREAR UNA WEB DESDE CERO:
+---------------------------------------------------------------------------------------------
+
+* Ingresa a: tuweb.com/SM/install.php
+* Sigue los pasos.
+* Al finalizar la instalación, ELIMINA todo el contenido de la carpeta SM para evitar hackeos.
+* A disfrutar de tu nuevo sitio web!
+
+
+---------------------------------------------------------------------------------------------
+-------->SI VAS A PASAR DE SMLINE 1.0 A 1.1
+---------------------------------------------------------------------------------------------
+
+* Antes de subir los archivos de SMline 1.1, elimina los viejos archivos de tu FTP
+* Ingresa a: tuweb.com/SM/1-1.php.
+* Elimina todo el contenido de la carpeta SM para evitar hackeos.
+* A disfrutar de tu sitio web!
+
+
+---------------------------------------------------------------------------------------------
+-------->SI VAS A PASAR DE PHPOST A SMLINE
+---------------------------------------------------------------------------------------------
+
+* Haz un respaldo de tu base de datos y script PHPost.
+* Elimina los archivos y carpetas que pertenezcan a PHPost, ecepto el archivo config.inc.php.
+* Sube los archivos de SMline a tu FTP.
+* Ingresa a: tuweb.com/SM/phpost.php.
+* Sigue los pasos.
+* Al finalizar la instalación, ELIMINA todo el contenido de la carpeta SM para evitar hackeos.
+* A disfrutar de tu sitio web con SMline!
+
+ATT: DAVID - SMLINE.NET
