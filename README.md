@@ -1,3 +1,4 @@
 # SMline
-SMline community script
-http://smline.net Coming soon!
+- SMline community script
+- http://smline.net ya disponible
+- SMline es simple, liviano y cool.
