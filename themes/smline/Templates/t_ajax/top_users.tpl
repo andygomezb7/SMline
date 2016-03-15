@@ -1,0 +1,1 @@
+{if !$top_users}<div class="emptyData">No hay usuarios en este rango de tiempo</div>{/if}{foreach from=$top_users item=u key=i}<div class="list-element">	<span class="number-list">{$i+1}</span>	<a href="{$web.url}/{$u.u_nick}">{$u.u_nick}</a>	<span class="value">{$u.total}</span></div>{/foreach}<div class="box_more">	<a href="{$web.url}/tops/users">Ver más</a></div>

@@ -1,0 +1,1 @@
+{include file='includes/header.tpl'}<div id="sidebar">	{include file='i_post/author.tpl'}</div><div id="main-col" style="margin-left:5px;">	{include file='i_post/content.tpl'}	{include file='i_post/related.tpl'}	<div class="publi-right">	{include file='i_banners/300.tpl'}	</div>	{include file='i_post/comments.tpl'}</div>{include file='includes/footer.tpl'}

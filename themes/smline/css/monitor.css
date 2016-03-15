@@ -1,0 +1,15 @@
+.fil_list .list_fil {
+	padding: 4px;
+	display: block;
+	border-top: 1px dashed #E6E6E6;
+}
+
+.fil_list .list_fil input {
+	width: auto;
+	float: left;
+	margin: 2px 5px 2px 2px;
+}
+
+.fil_list .list_fil label {
+	font-weight: normal;
+}

@@ -1,0 +1,296 @@
+.comu-head {
+	margin-bottom: 15px;
+	position: relative;
+}
+
+.big-group-info {
+	border-top: 3px solid #096FDB;
+	padding: 8px;
+	background: #F5F5F5;
+}
+
+.big-group-data {
+	float: left;
+	width: 580px;
+}
+
+.big-group-data h1 {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+#content .big-group-data h1 a {
+	color: #0773D8;
+	font-size: 23px;
+}
+
+.big-group-data .info-basic {
+	margin: 2px 0 10px 0;
+	width: 100%;
+	min-height: 52px;
+	font-size: 12px;
+	color: #777;
+}
+
+img.big-avatar {
+	display: block;
+	width: 120px;
+	height: 120px;
+	margin-right: 10px;
+}
+
+.join-community {
+	display: inline-block;
+}
+
+.big-group-data ul.action-data {
+float: right;
+}
+
+.big-group-data ul.action-data li {
+	float: left;
+	padding: 5px 15px 2px 15px;
+	border-right: 1px solid #CCC;
+	font-weight: normal;
+	text-align: right;
+	line-height: 12px;
+	font-size: 11px;
+	color: #B6B6B6;
+}
+
+.big-group-data ul.action-data li span {
+	display: block;
+	font-weight: bold;
+	font-size: 15px;
+	color: #5E5E5E;
+}
+
+/* TEMAS */
+
+#comm-thread-list {
+	background: #FFF;
+	border: solid 1px #E4E4E4;
+}
+
+#comm-thread-list .list-header {
+	width:100%;
+	background: #F5F5F5;
+}
+
+#comm-thread-list .list-header h3 {
+	float: left;
+	margin: 12px;
+	color: #555;
+}
+
+#comm-thread-list .list-header a{
+	margin: 6px;
+}
+
+#comm-thread-list .thread {
+	padding: 8px 6px;
+	position: relative;
+}
+#comm-thread-list .thread:nth-child(2n+1) {
+	background: #F5F5F5;
+}
+#comm-thread-list .thread .info {
+	width: 660px;
+	color: #777;
+}
+#comm-thread-list .thread .author-avatar {
+	float: left;
+	margin-right: 8px;
+	width: 32px;
+	height: 32px;
+	overflow: hidden;
+	border-radius: 3px;
+	border: solid 1px #CCC;
+}
+#comm-thread-list .thread .info span {
+	display: block;
+	font-size:11px;
+}
+
+#content #comm-thread-list .thread .info span a {
+	color: #444;
+	font-size: 11px;
+	font-weight: normal;
+}
+
+#comm-thread-list .thread .info a.topic-title {
+	display: block;
+	font-size: 16px;
+	font-weight: normal;
+	margin-bottom: 1px;
+}
+
+.button-action-s {
+	float: left;
+	margin: 0;
+	padding: 5px 0px 0 0;
+	height: 27px;
+}
+
+.button-action-s i.smarticon {
+	float: left;
+	margin: 2px 0 0 10px!important;
+}
+
+#comm-thread-list .thread .topic-stats {
+	position: absolute;
+	right: 9px;
+	top: 9px;
+}
+
+#comm-thread-list .thread .topic-stats .button-action-s .action-number {
+	width: 26px;
+	float: left;
+	padding: 0 0 0 8px;
+	height: 20px;
+	font-weight: bold;
+	font-size: 12px;
+	line-height: 21px;
+	color: #666;
+	border-radius: 0 3px 3px 0;
+	position: relative;
+}
+
+#comm-thread-list .thread .topic-stats .button-action-s .action-number span {
+	font-weight: normal;
+	white-space: nowrap;
+	line-height: 18px;
+
+}
+
+table.comu-info-table tr td {
+	padding: 4px;
+	max-width: 500px;
+}
+
+table.comu-info-table tr td.title-left {
+	font-weight: bold;
+	padding-right: 8px;
+}
+
+table.comu-info-table tr td.title-right {
+	color: #585858;
+}
+
+li.list_users {
+	display: inline-block;
+	position: relative;
+}
+
+.list-element span.value {
+	position: absolute;
+	background: #FFF;
+	right: 12px;
+	padding-left: 5px;
+	margin: 0;
+	font-weight: bold;
+	text-shadow: 0 1px 0 #FFF;
+	color: #69900f;
+}
+
+.user-status {
+	width: 8px;
+	height: 8px;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	border: solid 1px white;
+	border-right: 0;
+	border-bottom: 0;
+}
+
+.user-status.offline {
+	background: #ccc;
+}
+
+.user-status.online {
+	background: #46ce57;
+}
+
+li.list_users.admin img {
+	border: 1px solid #40c2ff;
+	box-shadow: 0 0 5px 0 #b5dff1;
+}
+
+li.list_users.mod img {
+	border: 1px solid #40FF5F;
+	box-shadow: 0 0 5px 0 #B5F1B5;
+}
+
+.filterBy {
+	padding: 8px;
+	margin-bottom: 10px;
+	color: #666;
+	background: #DFDFDF;
+}
+.ui-corner-all {
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+}
+
+.xResults {
+	padding: 3px 6px;
+}
+
+.filterBy li {
+	display: block;
+	float: left;
+	padding: 3px 6px;
+	border-radius: 4px 4px 4px 4px;
+	font-weight: normal;
+}
+
+.filterBy li a {
+	font-weight: normal;
+	text-shadow: 0 1px 0 #EEE;
+	color: #000;
+}
+
+.filterBy li.here {
+	font-weight: bold;
+	background: none repeat scroll 0 0 #4D4D4D;
+}
+
+.filterBy li.here a {
+	font-weight: bold;
+	text-shadow: 0 1px 0 #000;
+	color: #FFFFFF;
+}
+
+.img-comu img {
+	width: 75px;
+	height: 75px;
+}
+
+.resultBox {
+	padding: 10px;
+	border-bottom: 1px dotted #CCC;
+}
+
+.resultBox:last-child {
+	border: none
+}
+
+.resultBox h4 {
+	margin: 0;
+}
+
+.resultBox h4 a {
+	font-size: 15px;
+}
+
+.infoBox {
+	margin-left: 10px;
+	color: #666;
+}
+
+.infoBox strong {
+	color: #000;
+}

@@ -1,0 +1,56 @@
+.notification-board.bottom {
+bottom: 0;
+}
+.notification-board.right {
+right: 0;
+}
+.notification-board {
+position: fixed;
+width: 250px;
+z-index: 9999;
+}
+
+.bottom {
+margin-bottom: 0;
+padding-bottom: 0;
+}
+.notification-board.right>.notification {
+margin-right: 10px;
+margin-bottom: 10px;
+height: 35px;
+}
+.notification-board>.notification {
+background: url("images/black-transparency.png") repeat;
+border-radius: 5px;
+color: #fff;
+padding: 8px;
+font-size: 11px;
+font-weight: normal;
+line-height: 16px;
+position: relative;
+cursor: pointer;
+display: block;
+text-decoration: none;
+}
+
+.notification-board>.notification>.close {
+background: url("images/close-small.png") no-repeat;
+height: 24px;
+position: absolute;
+right: -9px;
+top: -8px;
+width: 24px;
+}
+
+.notification-board>.notification img {
+float: left;
+height: 32px;
+margin-right: 6px;
+width: 32px;
+cursor: pointer;
+}
+
+.notification-board>.notification span, .notification-board a {
+color: #6cf;
+font-weight: bold;
+}

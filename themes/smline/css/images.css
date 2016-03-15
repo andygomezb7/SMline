@@ -1,0 +1,98 @@
+.img-list {
+	float: left;
+	width: 334px;
+	padding: 5px;
+	border: 1px solid #CCC;
+	margin-left: 5px;
+	margin-bottom: 5px;
+	border-radius: 3px;
+}
+
+.img-list a.img-title {
+	font-size: 15px!important;
+}
+
+.img-list div.img-head {
+	display: block;
+	border-bottom: 1px dashed #CCC;
+	margin-bottom: 5px;
+	padding-bottom: 3px;
+}
+
+
+.img-list img.img-src {
+	padding: 2px;
+	border: 1px solid #CCC;
+}
+
+.img-list span.img-desc {
+	color: #646464;
+	width: 202px;
+	float: right;
+}
+
+.img-list span.img-date {
+	display: block;
+	color: #8F8F8F;
+	border-top: 1px dashed #CCC;
+	margin-top: 5px;
+	padding-top: 3px;
+	padding-right: 3px;
+	text-align: right;
+	font-size: 11px;
+}
+
+.img-list span.img-date a {
+	color: #8F8F8F;
+	font-size: 11px!important;
+}
+
+.overlay_load {
+	position: absolute;
+	z-index: 9999;
+	top: 50%;
+	left: 34.5%;
+}
+
+#content #sidebar {
+	width: 275px;
+}
+
+#mydialog #dialog-img {
+	background: rgba(0, 0, 0, 0.8);
+	position: fixed;
+	z-index: 110;
+	padding: 5px;
+}
+
+#mydialog .img-loading {
+	position: absolute;
+	left: 1px;
+	top: 1px;
+	opacity: 0.5;
+}
+
+#mydialog .img-close {
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 111;
+}
+
+#mydialog .img-full {
+	max-width: 800px;
+}
+
+.estadisticas {
+	color: #626970;
+	width: 50%;
+	font-size: 12px;
+}
+
+.estadisticas li {
+	font-size: 15px;
+}
+
+#sidebar .list-element a {
+
+}

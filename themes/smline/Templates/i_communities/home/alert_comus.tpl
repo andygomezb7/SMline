@@ -1,0 +1,1 @@
+<div class="box">	<div class="box_title">Crea tu comunidad</div>	<div class="box_body">		<div id="error" class="home_new"><b>{$web.title}</b> te permite crear tu propia comunidad  para que puedas compartir gustos e intereses con los demás.</div>		<center><a href="{$web.url}/comunidades/crear" class="button margin-top-5">&iexcl;Crea la tuya!</a></center>	</div></div>

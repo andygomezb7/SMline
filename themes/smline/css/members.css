@@ -1,0 +1,93 @@
+.filterBy {
+	padding: 8px;
+	margin-bottom: 10px;
+	color: #666;
+	background: #DFDFDF;
+}
+.ui-corner-all {
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+}
+
+.xResults {
+	padding: 3px 6px;
+}
+
+.filterBy li {
+	display: block;
+	float: left;
+	padding: 3px 6px;
+	border-radius: 4px 4px 4px 4px;
+	font-weight: normal;
+}
+
+.filterBy li a {
+	font-weight: normal;
+	text-shadow: 0 1px 0 #EEE;
+	color: #000;
+}
+
+.filterBy li.here {
+	font-weight: bold;
+	background: none repeat scroll 0 0 #4D4D4D;
+}
+
+.filterBy li.here a {
+	font-weight: bold;
+	text-shadow: 0 1px 0 #000;
+	color: #FFFFFF;
+}
+
+.img-ava.online img {
+	border: 1px solid #AAE4A7;
+	box-shadow: 0px 0px 3px #0CA804;
+}
+
+.resultBox {
+	padding: 10px;
+	border-top: 1px dotted #CCC;
+	width: 330px;
+	float: left;
+}
+
+.resultBox:nth-child(2n+1) {
+	margin-right: 20px;
+}
+
+.resultBox:first-child, .resultBox:nth-child(2) {
+	border: none
+}
+
+.resultBox h4 {
+	margin: 0;
+}
+
+.resultBox h4 a {
+	font-size: 16px;
+	vertical-align: text-bottom;
+}
+
+.infoBox {
+	margin-left: 6px;
+	color: #666;
+	width: 200px;
+}
+
+.infoBox strong {
+	color: #000;
+}
+
+.infoBox li {
+	line-height: 20px
+}
+
+.last_members  .list-element {
+	position: relative;
+}
+
+.last_members  .list-element #follows-buttons {
+	position: absolute;
+	right: 5px;
+	top: 15px;
+}

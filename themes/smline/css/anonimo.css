@@ -1,0 +1,77 @@
+#login {
+	background: #F7F7F7;
+	border-top: 1px solid #FFF;
+	padding: 20px;
+}
+
+#login h2 {
+color: #2A68C5;
+font-size: 17px;
+margin: 5px 0 10px 0;
+}
+
+#login p a {
+	font-size: 12px;
+	margin: 10px 0;
+	display: block;
+}
+
+#login p a:hover {
+	text-decoration:underline;
+}
+
+#login li.list_item {
+	margin-bottom: 10px;
+}
+
+#login li label {
+	font-size: 15px;
+	color: #666;
+	padding: 8px 8px 8px 0;
+	display: block;
+	font-weight: normal;
+}
+
+#login li input {
+	font-size: 16px;
+	font-weight: normal;
+	color: #425994;
+	width: 246px;
+}
+
+#register_content .registrarme, #login .loguearme  {
+	margin: 10px 0 10px;
+	padding: 10px 15px;
+	font-size: 18px;
+	border-radius: 8px;
+	background: #066BD6;
+	color: #fff;
+	font-weight: bold;
+	border: 1px solid #066BD6;
+	cursor: pointer;
+	box-shadow: 1px 1px 3px #ccc;
+}
+
+#register_content .registrarme:hover, #login .loguearme:hover {
+	background: #1E87F8;
+}
+
+.is-anon-title {
+    color: #3A79FF;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.is-anon-body {
+    color: #7E7E7E;
+    font-size: 13px;
+	max-width: 380px;
+}
+
+.is-anon-buttons {
+	margin-top: 15px;
+}
+
+.modal-wrapper h3 {
+	line-height: 30px;
+}

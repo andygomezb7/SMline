@@ -1,0 +1,90 @@
+#menu_2 {
+	display: none;
+}
+
+#main-col {
+	float: left;
+	overflow: hidden;
+	width: 680px;
+	border-right: 1px dotted #ccc;
+}
+
+#main-col #full-col {
+	overflow: hidden;
+	padding: 4px;
+}
+
+div.ct-data {
+	padding: 0 10px;
+	text-shadow: 0 1px 0 #fff;
+	font-family: Arial,Helvetica,sans-serif;
+}
+
+.clearfix, .container, .box, .markItUpHeader, .list-element {
+	display: block;
+}
+
+div.ct-data ul.anchor-list {
+	margin-bottom: 20px;
+}
+
+div.ct-data ul {
+	margin: 0 0 30px 0;
+	padding: 0 0 0 51px;
+	font-size: 14px;
+	color: #444;
+	list-style-type: disc;
+}
+
+div.ct-data ul li {
+	line-height: 25px;
+}
+
+div.ct-data ul.anchor-list li a {
+	font-weight: normal !important;
+}
+
+div.ct-data p {
+	margin-bottom: 20px;
+	padding: 0;
+	font-size: 14px;
+	line-height: 25px;
+	color: #444;
+}
+
+div.ct-data h3, div.ct-data a.subtitle {
+	margin: 10px 0;
+	padding-bottom: 5px;
+	display: block;
+	border-bottom: 1px dotted #ccc;
+	font-size: 20px;
+	color: black;
+	font-weight: normal;
+}
+
+div.ct-data .blockquote {
+	margin: 0 0 0 40px !important;
+}
+
+div.ct-data .blockquote h3 {
+	font-size: 16px;
+}
+
+#sidebar {
+	width: 307px!important;
+}
+
+#sidebar.list {
+	padding: 0 !important;
+}
+
+#sidebar.list a {
+	border-bottom: 1px dotted #ccc;
+	display: block;
+	padding: 6px 0 6px 12px;
+}
+
+#sidebar.list a:hover, #sidebar.list a.active {
+	background: #f1f1f1;
+	text-decoration: none;
+}

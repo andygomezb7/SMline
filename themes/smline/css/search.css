@@ -1,0 +1,122 @@
+.fil_tit {
+	color: #585858;
+	font-size: 18px;
+	font-style: italic;
+	font-family: -webkit-body;
+	padding: 4px;
+	display: block;
+}
+
+.fil_list .list_fil a {
+    padding: 4px;
+    display: block;
+    border-top: 1px dashed #E6E6E6;
+}
+
+.fil_list .list_fil.active a {
+    color: #424244;
+	font-weight: bold;
+}
+
+.fil_list .list_fil.active a:hover {
+	text-decoration: none!important;
+}
+
+.fil_list input {
+	width: 180px;
+	margin: 2px;
+}
+
+.all_filters hr {
+	margin: 8px 0;
+	box-shadow: 0 1px 17px #696969;
+}
+
+.list-header .thread:nth-child(2n+1) {
+	background: #F5F5F5;
+}
+.list-header .thread {
+	padding: 8px 6px;
+	position: relative;
+}
+
+.list-header .thread .author-avatar {
+	float: left;
+	margin-right: 8px;
+	width: 32px;
+	height: 32px;
+	overflow: hidden;
+	border-radius: 3px;
+	border: solid 1px #CCC;
+}
+
+.list-header .thread .info {
+	width: 660px;
+	color: #777;
+}
+
+.list-header .thread .info a.topic-title {
+	display: block;
+	font-size: 16px;
+	font-weight: normal;
+	margin-bottom: 1px;
+}
+
+.list-header .thread .info span {
+	display: block;
+	font-size: 11px;
+}
+
+#content .list-header .thread .info span a {
+	color: #444;
+	font-size: 11px;
+	font-weight: normal;
+}
+
+.list-header .thread .topic-stats {
+	position: absolute;
+	right: 9px;
+	top: 9px;
+}
+
+.button-action-s {
+	float: left;
+	margin: 0;
+	padding: 5px 0px 0 0;
+	height: 27px;
+}
+
+.button-action-s i.smarticon {
+	float: left;
+	margin: 2px 0 0 10px!important;
+}
+
+.list-header .thread .topic-stats .button-action-s .action-number {
+	width: 26px;
+	float: left;
+	padding: 0 0 0 8px;
+	height: 20px;
+	font-weight: bold;
+	font-size: 12px;
+	line-height: 21px;
+	color: #666;
+	border-radius: 0 3px 3px 0;
+	position: relative;
+}
+
+.list-header .thread .topic-stats .button-action-s .action-number span {
+	font-weight: normal;
+	white-space: nowrap;
+	line-height: 18px;
+}
+
+.list-header .thread .info a.topic-title b {
+	background: #FFFCAD;
+}
+
+.box_title h1 {
+	font-size: 15px;
+	font-weight: bold;
+	color: #000;
+	display: inline;
+}

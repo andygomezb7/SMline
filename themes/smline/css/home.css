@@ -1,0 +1,118 @@
+.home_left {
+	width: 410px;
+	float: left;
+}
+
+.home_center {
+	width: 310px;
+	margin-left: 5px;
+	float: left;
+}
+
+.home_right {
+	width: 258px;
+	margin-left: 5px;
+	float: left;
+}
+
+.estadisticas {
+	color: #626970;
+	width: 50%;
+	font-size: 12px;
+}
+
+.last_members .u_nick {
+	vertical-align: top;
+	margin-left: 3px;
+}
+
+.box #error {
+	margin: 0;
+}
+
+.list_element span.number-list {
+	display: block;
+	float: left;
+	margin: 0 3px;
+	width: 16px;
+	font-weight: bold;
+	color: #83A8DF;
+}
+
+.list_element span.value {
+	float: right;
+	margin: 0;
+	font-weight: bold;
+	text-shadow: 0 1px 0 #FFF;
+	color: #2DA200;
+}
+
+.home_center .list-element a {
+    font-weight: bold;
+}
+
+.overlay_load {
+	position: absolute;
+	z-index: 9999;
+	top: 50%;
+	left: 47%;
+}
+
+.box_filter {
+	border: 1px solid #E2E2E2;
+	/* border-bottom: none; */
+	border-top: none;
+}
+
+.box_filter a {
+	padding: 5px;
+	float: left;
+	background: #FFF;FFFF;
+	margin: 3px 5px;
+	border-radius: 6px;
+	color: #5091D3;
+}
+
+.box_filter a.active {
+	background: #F0F7FD;
+}
+
+.estadisticas li {
+	font-size: 15px;
+}
+
+#error.home_new {
+	font-weight: normal;
+}
+
+.list-element.patrocinado:nth-child(2n+1) {
+	background: #FFEFC5;
+}
+.list-element.patrocinado {
+	background: #FFEFC5;
+}
+
+#menu_2 select {
+	margin: 4px 7px;
+	height: 29px;
+}
+
+.list-element p {
+	margin: 0;
+	font-size: 11px;
+	color: #889;
+}
+
+.list-element p a {
+	font-weight: normal!important;
+	color: #889;
+}
+
+a.popular-comu-a {
+	display: block;
+	color: #3D6AC9;
+	font-size: 16px!important;
+	margin-top: 10px;
+}
+
+.webs_amigas hr:last-child {display:none}

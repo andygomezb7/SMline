@@ -1,0 +1,15 @@
+.list_element span.number-list {
+	margin: 0 6px!important;
+	width: 20px!important;
+}
+
+.box-top {
+	width: 360px;
+	vertical-align: top;
+	float: left;
+}
+
+.box-top:nth-child(2n+1) {
+    margin-right: 5px;
+	margin-left; 5px;
+}

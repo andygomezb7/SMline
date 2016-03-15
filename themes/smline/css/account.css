@@ -1,0 +1,126 @@
+.list_redes li.red_facebook a.new_vincula {
+	background: url(img/social/vincular-facebook.png) no-repeat;
+	display: block;
+	width: 161px;
+	height: 22px;
+	margin: 10px auto;
+}
+
+.list_redes li.red_twitter .new_vincula {
+	background: url(img/social/vincular-twitter.png) no-repeat;
+	display: block;
+	width: 150px;
+	height: 22px;
+	margin: 10px auto;
+}
+
+
+.list_redes li.red_google .new_vincula {
+	background: url(img/social/vincular-google.png) no-repeat;
+	display: block;
+	width: 161px;
+	height: 22px;
+	margin: 10px auto;
+}
+
+.list_redes li.red_twitter .new_vincula:hover{ 
+	background-position: 0 -24px;
+}
+
+.list_redes li.red_twitter .new_vincula:active{ 
+	background-position: 0 -48px;
+}
+
+.list_redes li.red_facebook .new_vincula:hover{ 
+	background-position: 0 -24px;
+}
+
+.list_redes li.red_facebook .new_vincula:active{ 
+	background-position: 0 -48px;
+}
+
+.list_redes li.red_google .new_vincula:hover{ 
+	background-position: 0 -24px;
+}
+
+.list_redes li.red_google .new_vincula:active{ 
+	background-position: 0 -48px;
+}
+
+.profile-content .profile_main {
+	min-height: 334px;
+}
+
+#sm-account label {
+	font-size: 13px;
+	color: #444;
+	padding: 8px 22px 8px 8px;
+	float: left;
+	width: 120px;
+	text-align: right;
+	width: 130px;
+}
+
+#sm-account  li input.inp_text {
+	font-size: 13px;
+	width: 250px;
+}
+
+#sm-account  li textarea {
+	font-size: 13px;
+	width: 350px;
+	max-width: 350px;
+	height: 60px;
+}
+
+#sm-account li.list_item {
+	padding: 10px 0;
+	position: relative;
+	border-bottom: 1px dotted #DDD;
+}
+
+#sm-account label.label-align {
+	padding-top: 2px;
+}
+
+.vertical_tabbed_tabs {
+	position: relative;
+}
+
+.edit-avatar {
+    position: absolute;
+    z-index: 11;
+    top: 5px;
+    left: 21px;
+    opacity: .4;
+}
+
+.edit-avatar:hover {
+    opacity: 1;
+}
+
+#sm-account #my-notifications label {
+    float: none;
+    padding: 0;
+    font-weight: normal;
+    vertical-align: middle;
+}
+
+#sm-account #my-notifications input[type="checkbox"] {
+    margin: 3px;
+    vertical-align: middle;
+}
+
+.list_right_inputs {
+    display: block;
+    float: right;
+    width: 370px;
+}
+
+span.fil_tit {
+    float: left;
+    width: 150px;
+    text-align: right;
+    font-weight: bold;
+	padding-top: 2px;
+}

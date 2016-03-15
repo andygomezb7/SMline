@@ -1,0 +1,1 @@
+<div class="box">	<div class="box_title">Editor de archivos</div>	<div class="box_body clearfix admin-settings admin-ads">				{$editor|print_r}				<hr>		<input type="button" class="button_1 b_ok floatR" value="Guardar cambios" onclick="admin.ads.save();">			</div>	</div>

@@ -1,0 +1,1 @@
+{if $web.ads_300}<center class="margin-top-5">{$web.ads_300}</center>{/if}

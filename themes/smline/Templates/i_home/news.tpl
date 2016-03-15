@@ -1,0 +1,1 @@
+{if $h_news}<div class="all_news">	<div class="home_news">		{foreach from=$h_news item=n key=i}		<div id="error" class="home_new" style="{if $i != 0}display: none;{/if}">{$n.n_body}</div>		{/foreach}	</div></div>{/if}
